@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paula Cosmetik</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand__dot"></div>
+      <div>
+        <div class="brand__name">Paula Cosmetik</div>
+        <div class="brand__tag">Beauté • Soins • Glow ✨</div>
+      </div>
+    </div>
+
+    <div class="search">
+      <span class="search__icon" aria-hidden="true">⌕</span>
+      <input id="searchInput" class="search__input" type="search" placeholder="Rechercher un produit…" />
+    </div>
+
+    <div class="actions">
+      <button id="themeBtn" class="btn btn--ghost" type="button" aria-label="Basculer en mode sombre">
+        <span class="btn__icon" aria-hidden="true">🌙</span>
+        <span class="btn__text">Mode</span>
+      </button>
+
+      <a id="whatsHeader" class="btn btn--primary" href="#" target="_blank" rel="noreferrer">
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Révélez votre beauté naturelle.</h1>
+        <p>
+          Une sélection de produits cosmétiques choisis avec soin.
+          Commandez facilement sur WhatsApp.
+        </p>
+
+        <div class="hero__cta">
+          <a id="whatsHero" class="btn btn--primary" href="#" target="_blank" rel="noreferrer">
+            Commander sur WhatsApp
+          </a>
+          <a class="btn btn--ghost" href="#produits">Voir les produits</a>
+        </div>
+
+        <div class="hero__chips">
+          <span class="chip">Livraison rapide</span>
+          <span class="chip">Produits authentiques</span>
+          <span class="chip">Conseils personnalisés</span>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="hero__shine"></div>
+        <div class="hero__cardTitle">Best sellers</div>
+        <div class="hero__cardGrid" id="bestSellers"></div>
+      </div>
+    </section>
+
+    <section class="section" id="produits">
+      <div class="section__head">
+        <h2>Produits</h2>
+        <p id="resultsMeta" class="muted">—</p>
+      </div>
+
+      <div id="productGrid" class="grid"></div>
+
+      <div id="emptyState" class="empty hidden">
+        <div class="empty__title">Aucun résultat</div>
+        <div class="empty__text">Essaie un autre mot-clé (ex: “crème”, “huile”, “savon”…)</div>
+      </div>
+    </section>
+  </main>
+
+  <a id="whatsFloat" class="float-whatsapp" href="#" target="_blank" rel="noreferrer" aria-label="Contacter sur WhatsApp">
+    💬
+  </a>
+<br>
+<br>
+<br>
+
+<!-- MODAL PRODUIT -->
+<div id="modalOverlay" class="modal-overlay hidden" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Détails du produit">
+    <button id="modalClose" class="modal-close" type="button" aria-label="Fermer">✕</button>
+
+    <div class="modal-content">
+      <div class="modal-media">
+        <img id="modalImg" src="" alt="" />
+      </div>
+
+      <div class="modal-info">
+        <div class="modal-top">
+          <h3 id="modalName"></h3>
+          <div id="modalPrice" class="modal-price"></div>
+        </div>
+
+        <div id="modalTags" class="modal-tags"></div>
+
+        <div class="modal-actions">
+          <a id="modalWhats" class="btn btn--primary" href="#" target="_blank" rel="noreferrer">
+            Commander sur WhatsApp
+          </a>
+          <button id="modalCopy" class="btn btn--ghost" type="button">Copier le nom</button>
+        </div>
+
+        <div class="modal-desc-wrap">
+          <div class="modal-desc-title">Description</div>
+          <p id="modalDesc" class="modal-desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
