@@ -1,17 +1,18 @@
+
+
 // ===========================
 // CONFIG
 // ===========================
-const WHATSAPP_NUMBER = "2250700000000"; // <-- remplace par le vrai numéro
+const WHATSAPP_NUMBER = "2250789187301"; // <-- remplace par le vrai numéro
 
 const products = [
   {
     id: 1,
-    name: "Lait éclat intense",
+    name: "Combo Douceur Éclat",
     price: "10 000 FCFA",
-    desc: "Hydrate et illumine la peau. Texture légère, fini glow.",
+    desc: "Le Combo Douceur Éclat est spécialement conçu pour les peaux sensibles, fragiles ou délicates. Il associe un lait hydratant ultra doux et un savon nettoyant délicat pour hydrater profondément, uniformiser progressivement le teint, réduire l’apparence des zones plus foncées et améliorer la texture de la peau sans agression. Idéal pour une routine douce qui respecte l’équilibre naturel de la peau et apporte éclat, souplesse et confort au quotidien.",
     tags: ["Glow", "Hydratation"],
-    image: "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?q=80&w=1200&auto=format&fit=crop",
-    desc: "Peau sensible et délicate ? Ce combo hydrate en profondeur, agit en douceur et aide à uniformiser progressivement le teint...",
+    image: "https://i.postimg.cc/zXyvz5hy/image_(2).png",
     best: true
   },
   {
@@ -20,7 +21,7 @@ const products = [
     price: "7 500 FCFA",
     desc: "Confort immédiat, peau plus souple et plus lisse.",
     tags: ["Visage", "Daily"],
-    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1200&auto=format&fit=crop",
+    image: "https://i.postimg.cc/tTKb91Vv/image-(5).png",
     desc: "Peau sensible et délicate ? Ce combo hydrate en profondeur, agit en douceur et aide à uniformiser progressivement le teint...",
     best: true
   },
@@ -30,7 +31,7 @@ const products = [
     price: "12 000 FCFA",
     desc: "Aide à réparer, unifie et booste l’éclat.",
     tags: ["Sérum", "Éclat"],
-    image: "https://images.unsplash.com/photo-1620916566393-e7c5a7e15f4e?q=80&w=1200&auto=format&fit=crop",
+    image: "https://i.postimg.cc/vZsWc3sR/image-(6).png",
     desc: "Peau sensible et délicate ? Ce combo hydrate en profondeur, agit en douceur et aide à uniformiser progressivement le teint...",
     best: false
   },
@@ -269,6 +270,7 @@ document.addEventListener("keydown", (e) => {
     closeModal();
   }
 });
+
 
 // Copier le nom du produit
 modalCopy?.addEventListener("click", async () => {
