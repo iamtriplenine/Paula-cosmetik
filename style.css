@@ -306,7 +306,17 @@ body.light .mini{ background: rgba(255,255,255,.55); }
     padding: 10px 10px;
     gap: 10px;
   }
+ .search{
+    padding: 8px 10px;
+  }
 
+  .actions{
+    gap: 8px;
+  }
+
+  .btn{
+    padding: 9px 10px;
+  }
   
   .btn__text{ display:none; }
   .brand__tag{ display:none; }
